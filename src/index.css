@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  background-color:#F0F8FF !important;
+}
+input,
+.forgetpassword {
+  border-radius: 5px !important;
+}
+.navbar {
+  background-color: #F0F8FF !important;
+}
+form {
+  background-color: #F0F8FF !important;
+  border-radius: 5px !important;
+  box-shadow: rgba(87, 85, 85, 0.24) 0px 3px 8px;
+  width: 550px !important;
+  margin: auto;
+}
+.submit,
+.forgetpassword {
+  background-color: #F0F8FF;
+  border: none;
+  padding: 5px 8px;
+}
+a {
+  display: inline-block;
+}
+h1 {
+  color: rgb(0, 0, 0) !important;
+}
+
+
+
