@@ -22,7 +22,7 @@ export default function CreateOrder() {
   const onSubmit = async (info) => {
     try {
       const { data } = await axios.post(
-        "https://ecommerce-node4.vercel.app/order",
+        "https://ecommerce-node4-five.vercel.app/order",
         info,
         { headers: { Authorization: `Tariq__${token}` } }
       );

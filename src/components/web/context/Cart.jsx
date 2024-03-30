@@ -2,7 +2,9 @@ import { createContext, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 export const CartContext = createContext(null);
+
 export function CartContextProvider({ children }) {
+
   const addToCartContext = async (productId) => {
     try {
       const token = localStorage.getItem("userToken");
@@ -28,6 +30,7 @@ export function CartContextProvider({ children }) {
       console.log(err);
     }
   };
+
   const getCartContext = async () => {
     try {
       const token = localStorage.getItem("userToken");
@@ -39,6 +42,7 @@ export function CartContextProvider({ children }) {
       console.log(err);
     }
   };
+  
   const removeItemContext = async (productId) => {
     try {
       const token = localStorage.getItem("userToken");

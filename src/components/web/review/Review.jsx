@@ -17,7 +17,7 @@ export default function Review() {
   const onSubmit = async (comment) => {
     try {
       const { data } = await axios.post(
-        `https://ecommerce-node4.vercel.app/products/${id}/review`,
+        `https://ecommerce-node4-five.vercel.app/products/${id}/review`,
         comment,
         { headers: { Authorization: `Tariq__${token}` } }
       );

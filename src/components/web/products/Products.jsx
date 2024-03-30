@@ -15,7 +15,7 @@ export default function Products() {
   const getProducts = async (page) => {
     try {
       const { data } = await axios.get(
-        `https://ecommerce-node4.vercel.app/products?page=${page}`
+        `https://ecommerce-node4-five.vercel.app/products?page=${page}`
       );
       console.log(data);
       setpro(data);
@@ -28,7 +28,7 @@ export default function Products() {
   const getProductsSorted= async (page,sort) => {
     try {
       const { data } = await axios.get(
-        `https://ecommerce-node4.vercel.app/products?page=${page}&sort=${sort}`
+        `https://ecommerce-node4-five.vercel.app/products?page=${page}&sort=${sort}`
       );
       console.log(data);
       setpro(data);
@@ -42,7 +42,7 @@ export default function Products() {
   
     try {
       const { data } = await axios.get(
-        `https://ecommerce-node4.vercel.app/products?page=${page}&price=${price}`
+        `https://ecommerce-node4-five.vercel.app/products?page=${page}&price=${price}`
       );
       console.log(data);
       setpro(data);
@@ -61,7 +61,7 @@ export default function Products() {
     }
     try {
       const { data } = await axios.get(
-        `https://ecommerce-node4.vercel.app/products?page=${page}&price[gte]=${min}&price[lte]=${max}`
+        `https://ecommerce-node4-five.vercel.app/products?page=${page}&price[gte]=${min}&price[lte]=${max}`
       );
       console.log(data);
       setpro(data);

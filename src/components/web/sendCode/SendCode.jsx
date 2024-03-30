@@ -17,7 +17,7 @@ export default function SendCode() {
   const onSubmit = async (email) => {
     try {
       const { data } = await axios.patch(
-        "https://ecommerce-node4.vercel.app/auth/sendcode",
+        "https://ecommerce-node4-five.vercel.app/auth/sendcode",
         email
       );
       console.log(data);
